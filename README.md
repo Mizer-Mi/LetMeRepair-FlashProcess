@@ -1,0 +1,2 @@
+# LetMeRepair-FlashProcess
+LetMeRepair Türkiye firmasında çalışırken yaptığım RAPI kütüphanelerini kullanan Windows 7 işletim sistemli bilgisayarlarda çalışan, Programın içeriğinde belirtilen modelli Honeywell-Intermec marka cihazların Driver ve Optimize ayarlarını buton tıklamaları ile otomatik yapan uygulamadır. C#, .Net Framework Winform uygulamasıdır. Cihazlara yazılım ve driver yüklenmesini kolaylaştırmış şirkete büyük ölçüde zaman kazandırmıştır.
