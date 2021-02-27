@@ -1,0 +1,8 @@
+[HKEY_CURRENT_USER\Software\Microsoft\AirSync\Settings]
+"DisconnectWhenDone"=dword:00000000
+"AutoSync"=dword:00000000
+"AutoSyncWhenCradled"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\Drivers\USB\FunctionDrivers\Serial_Class]
+"idVendor"=dword:0536    
+"idProduct"=dword:01A0

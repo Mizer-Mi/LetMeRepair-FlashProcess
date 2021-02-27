@@ -1,0 +1,246 @@
+<?xml version="1.0"?>
+<ConfigDoc flags="464" desc="Configuration File for general device settings." name="DeviceConfig">
+  <HHPReserved>
+    <Key name="EXMVersion">1.0.1</Key>
+    <Key name="ContentVersion">1.0.0</Key>
+    <Key name="RunAppName">\honeywell\deviceconfig.exe</Key>
+    <Section name="EZConfigBC">
+      <Key name="RemotePath">\honeywell\DeviceConfig.exm</Key>
+      <Key name="Simplify">1</Key>
+      <Key name="MaxBarcodeSize">1500</Key>
+      <Key name="ForcedNumBC">0</Key>
+      <Key name="Flags">2</Key>
+      <Key name="DataFlags">0</Key>
+    </Section>
+    <Key name="RunAppArgs">/exm %filename</Key>
+  </HHPReserved>
+  <Section flags="464" desc="Connection Settings" name="Connections">
+    <Section flags="465" desc="Beam settings" name="Beam">
+      <Key list="Off=2,On=3" flags="17" desc="Enables or disables receipt of incoming infared data. If set to On, incoming infared data will be enabled:&#xA;Off = Disable&#xA;On = Enable" name="Enable">3</Key>
+    </Section>
+    <Section flags="465" desc="Radio Manager settings" name="Radio Manager">
+      <Section flags="465" desc="802.11b radio settings.&#xA;A radio profile will be automatically created and selected as the preferred profile (profile name follows SSID)." name="WiFi">
+        <Key list="Off=0,On=1" flags="17" min="0" max="1" desc="Turn the radio Off/On. If On, the WiFi Radio will be turned on automatically.&#xA;0 = Off&#xA;1 = On" name="Enable">1</Key>
+        <Key list="Off=0,On=1" flags="17" min="0" max="1" desc="Specifies if power save mode is enabled or disabled:&#xA;0 = Disabled; Power save mode is disabled&#xA;1 = Enabled; Power save mode is enabled&#xA;" name="PowerMode">1</Key>
+        <Section desc="Driver Level TCP/IP settings.&#xA;Applies regardless of secuirty type used below." flags="257" name="TCPIP">
+          <Key list="Disabled=0,Enabled=1" flags="17" min="0" max="1" desc="0/1: Disable/Enable DHCP. When disabled, the radio interface will use the static IP address provided in the &quot;IPAddress&quot; key. When enabled, the address will be requested to a DHCP server.&#xA;" name="DHCP">1</Key>
+          <Key flags="17" desc="Static IP address (a.b.c.d) for the radio interface. Used when DHCP setting is disabled (set to 0)" name="IpAddress">
+          </Key>
+          <Key flags="17" desc="SubNet mask (a.b.c.d) used for the static IP address when DHCP is disabled" name="SubnetMask">
+          </Key>
+          <Key flags="17" desc="Default Gateway IP (a.b.c.d) address used when DHCP is disabled" name="DefaultGateway">
+          </Key>
+          <Key flags="17" desc="DNS (Domain Name Server) IP Address used when DHCP is disabled" name="DNS">
+          </Key>
+          <Key desc="Alternate DNS (Domain Name Server) IP Address used when DHCP is disabled" flags="17" name="DNS 2">
+          </Key>
+          <Key flags="17" desc="Domain name (xxx.yyy) for the device, when DHCP is disabled" name="Domain">
+          </Key>
+          <Key flags="17" desc="WINS (Windows Name Server)  IP Address used when DHCP is disabled" name="WINS">
+          </Key>
+          <Key desc="Alternate WINS (Windows Name Server)  IP Address used when DHCP is disabled" flags="17" name="WINS 2">
+          </Key>
+        </Section>
+        <Section flags="257" name="Security">
+          <Section desc="Use this section for configuring profiles of a WiFi Supplicant such as Devicescape&#xA;Note: AEGIS Client not supported.&#xA;&#xA;Separate profiles are defined by each sub section.  Each sub section name is abitrary, but each name must be different." flags="337" name="Supplicant">
+            <Section desc="" flags="449" name="Profile1">
+              <Key flags="1" desc="" name="Name">
+              </Key>
+              <Key flags="1" desc="SSID of the Access Point" name="SSID">
+              </Key>
+              <Key flags="1" desc="Select the radio mode: &#xA;Infrastructure=0&#xA;IBSS (Adhoc)=1" list="Infrastructure=0,IBSS (Adhoc)=1" name="Mode">0</Key>
+              <Key flags="1" desc="Select the radio band.&#xA;Auto=0&#xA;802.11b/g/n=1&#xA;802.11a/n=2" list="Auto=0,802.11b/g/n=1,802.11a/n=2" name="Band">0</Key>
+              <Key flags="1" desc="" list="None = 0,WEP = 1,IEEE 802.1X (WEP) = 2,WPA-Personal (PSK) = 3,WPA-Enterprise (EAP) = 4,WPA2-Personal (PSK) = 5,WPA2-Enterprise (EAP) = 6" gr="" name="Assoc Mode"> 0</Key>
+              <Key flags="1" list="Open = 0,Shared = 1,TKIP = 2,AES-CCMP = 3,TKIP + CCMP = 4" name="Encryption"> 0</Key>
+              <Key flags="1" list="FAST-MSCHAPV2 = 0,FAST-GTC = 1,FAST-TLS = 2,LEAP = 3,PEAPv0-MSCHAPV2 = 4,PEAPv1-MSCHAPV2 = 5,PEAPv1-GTC = 6,PEAPv1-TLS = 7,TLS = 8,TTLS-MD5 = 9,TTLS-MSCHAPV2 = 10,TTLS-GTC = 11" name="EAP Method"> 0</Key>
+              <Key flags="33" name="PSK">MP8kKUDbgo8=</Key>
+              <Key flags="1" desc="This is the 802.1X identity supplied to the authenticator. The identity value can be up to 63&#xA;ASCII characters and is case-sensitive." min="" name="Identity">
+              </Key>
+              <Key desc="This is the password used for MD5-Challenge or LEAP authentication. It may contain up to 63&#xA;ASCII characters and is case-sensitive. Asterisks appear instead of characters for enhanced&#xA;security." flags="33" name="Password">MP8kKUDbgo8=</Key>
+              <Key flags="1" desc="Enter the anonymous ID. This ID creates a tunnel through which the real ID (as entered in the&#xA;Identity field) can pass. For additional security, make this ID different than the one entered in&#xA;the Identity field." name="Anonymous ID">
+              </Key>
+              <Key flags="1" desc="File path (on the device) for the Tunnel PAC certificate.&#xA;Note: Certificate file must be copied to each device prior to running configuration." name="Tunnel PAC">
+              </Key>
+              <Key flags="1" desc="File path (on the device) for the Tunnel PAC certificate.&#xA;Note: Certificate file must be copied to each device prior to running configuration." name="Machine PAC">
+              </Key>
+              <Key flags="1" desc="Provisioning refers to service activation and involves programming various network&#xA;databases with the customer's information." list="No provisioning = 0,Anonymous = 1,Authenticated = 2,Anonymous + Authenticated = 3" name="Provisioning"> 0</Key>
+              <Key flags="1" desc="CA certificates are any certificates created by certified authority (CA)." name="CA Certificate">
+              </Key>
+              <Key flags="1" desc="Client certificates contain information that identifies the user, as well as information about&#xA;the organization that issued the certificate. This ensures that you can encrypt data end-toend." name="Client Certificate">
+              </Key>
+              <Key flags="1" desc="Private Key file path. (Must be located on the terminal)." name="Private Key">
+              </Key>
+              <Key desc="If you have loaded a private key, enter the password that unlocks the private key" flags="33" name="Priv Key Password">MP8kKUDbgo8=</Key>
+              <Key flags="1" desc="Mode being used by WEP keys.&#xA;ASCII mode uses all alpha numeric characters.  HEX uses only numerics and A-F&#xA;Valid lengths are as follows:&#xA;64bit ASCII = 5&#xA;128bit ASCII = 13&#xA;64bit HEX = 10&#xA;128bit HEX = 26" list="64bit ASCII = 0,128bit ASCII = 1,64bit HEX = 2,128bit HEX = 3" name="WEP Key Mode"> 0</Key>
+              <Key desc="Value for the WEP key 1&#xA;Length are character type must conform to WEP Key Mode set above" flags="33" name="WEP Key1">MP8kKUDbgo8=</Key>
+              <Key desc="Value for the WEP key 2&#xA;Length are character type must conform to WEP Key Mode set above" flags="33" name="WEP Key2">MP8kKUDbgo8=</Key>
+              <Key desc="Value for the WEP key 3&#xA;Length are character type must conform to WEP Key Mode set above" flags="33" name="WEP Key3">MP8kKUDbgo8=</Key>
+              <Key desc="Value for the WEP key 4&#xA;Length are character type must conform to WEP Key Mode set above" flags="33" name="WEP Key4">MP8kKUDbgo8=</Key>
+              <Key flags="1" desc="Sets which WEP Key (1-4) is used." max="4" min="1" name="Active Key">1</Key>
+            </Section>
+            <Key flags="1" desc="Defines the active (current) WiFi security profile.  Set &quot;Value&quot; equal to name of one of the desired profile sub-sections." name="Active Profile">Profile1</Key>
+          </Section>
+        </Section>
+        <Key flags="1" desc="The driver name of the WLAN driver is required for certain configuration settings.&#xA;To autodetect the device and driver, leave this field blank (default).&#xA;In most cases this field can be left blank, but the driver name can be entered here if necessary." name="DriverName">
+        </Key>
+      </Section>
+      <Section flags="465" desc="Bluetooth radio settings" name="Bluetooth">
+        <Key list="Off=0,On=1" flags="17" min="0" max="1" desc="Disable/Enable the Bluetooth Radio. If set to 1, the Bluetooth radio will be turned on automatically.&#xA;0 = Off&#xA;1 = On" name="Enable">1</Key>
+        <Section flags="465" desc="Bluetooth Printer to create as default (favorite)" name="Default Printer">
+          <Key flags="17" desc="Device name (ie: MH0355). This value can be blank." name="DeviceName">
+          </Key>
+          <Key flags="17" desc="Bluetooth hex MAC Address of the printer (ie: 00.80.37.1a.25.02)" name="Address">
+          </Key>
+          <Key flags="1" desc="Number to assign to the virtual COM Port. &#xA;On 7600 and 9900, it is best to leave this as 0." max="9" min="0" name="COMPort">0</Key>
+          <Key flags="1" max="31" min="0" desc="Printer's RFCOMM protocol channel (0-31). &#xA;0=Auto (Autodetect channel)" name="Channel">0</Key>
+          <Key flags="1" desc="PIN number assigned to Bluetooth Printer" name="PIN">
+          </Key>
+        </Section>
+      </Section>
+      <Section flags="465" desc="GSM/GPRS radio settings&#xA;&#xA;This section will be processed on a cold boot, when DeviceConfig &quot;Launch Associated Application&quot; menu is selected or when a DeviceConfig bar code is used." name="GSM">
+        <Key list="Off=0,On=1" flags="17" min="0" max="1" desc="Turn the radio Off/On. If On, the GSM Radio will be turned on automatically.&#xA;0 = Off&#xA;1 = On" name="Enable">1</Key>
+        <Key flags="17" desc="Set the Access Point name.  Default=ISP.CINGULAR." name="APN">ISP.CINGULAR</Key>
+        <Key flags="17" desc="Set the IP Address.   Leave blank for dynamic IP allocation." name="IpAddress">
+        </Key>
+        <Key flags="17" desc="Set the protocol.  Default=IP&#xA;" name="Protocol">IP</Key>
+        <Key flags="17" desc="Username for the GPRS connection. Leave blank or disable to ignore." name="Username">ISPDA@CINGULARGPRS.COM</Key>
+        <Key flags="49" desc="Password for the GPRS connection. Leave blank or disable to ignore" name="Password">gCCt5dGviBR43yEiQLlm8MwRyNY/thG5</Key>
+        <Key flags="1" list="Disabled=0,Enabled=1" desc="Enables/Disables the always on feature for the GSM/GPRS radio.&#xA;0 = Disabled&#xA;1 = Enabled" name="AlwayOn">0</Key>
+      </Section>
+      <Section flags="465" desc="GSM/GPRS radio settings&#xA;&#xA;This section will be processed on a cold boot, when DeviceConfig &quot;Launch Associated Application&quot; menu is selected or when a DeviceConfig bar code is used." name="AGPS">
+        <Key flags="17" min="0" max="3" desc="Specifies the AGPS mode.&#xA;&#xA;0: AGPS disabled&#xA;1: AssistNowOffline enabled&#xA;2: AssistNowOnline enabled&#xA;3: AssistNowOffline and AssistNowOnline enabled&#xA;&#xA;The default value is 3." name="Aiding">3</Key>
+        <Key flags="17" desc="Specifies the full path to the offline file to use for AssistNowOffline.&#xA;&#xA;The default value is \IPSM\current_3d.alp" name="AidFile">\Honeywell\current_3d.alp</Key>
+        <Key flags="17" desc="Specifies the AssistNowOnline server name.&#xA;&#xA;The default value is agps.u-blox.com" name="AidServer">agps.u-blox.com</Key>
+        <Key flags="1" desc="Specifies the AssistNowOnline server port number to use for establishing the server connection.&#xA;&#xA;The default value is 46434." name="AidServerPort">46434</Key>
+        <Key flags="17" desc="Specifies the username needed to authenticate with the AssistNowOnline server.&#xA; &#xA;There is no default value." name="AidServerUsername">
+        </Key>
+        <Key flags="17" desc="Specifies the password needed to authenticate with the AssistNowOnline server.&#xA;&#xA;There is no default value." name="AidServerPassword">
+        </Key>
+        <Key flags="17" desc="Specifies the last known latitude of the device.  This is used by the AssistNowOnline server to reduce the data payload it sends to the device to only include satellites that can be seen from this location.  It is used in conjunction with the Longitude key below.  &#xA;&#xA;Note - An incorrect latitude value can degrade TTFF performance." name="Latitude">
+        </Key>
+        <Key flags="17" desc="Specifies the last known longitude of the device.  This is used by the AssistNowOnline server to reduce the data payload it sends to the device to only include satellites that can be seen from this location.  It is used in conjunction with the Latitude key above.  &#xA;&#xA;Note - An incorrect longitude value can degrade TTFF performance." name="Longitude">
+        </Key>
+        <Key flags="17" desc="Specifies the approximate radius from the latitude/longitude specified above.  This is used by the AssistNowOnline server to reduce the data payload it sends to the device to only include satellites that can be seen from this location.&#xA;&#xA;Note - An incorrect value can degrade TTFF performance.&#xA;&#xA;The default value is 10 (in kilometers)." name="PositionRadius">10</Key>
+      </Section>
+      <Section flags="465" desc="GOBI radio settings" name="GOBI">
+        <Key list="Off=0,On=1" flags="17" min="0" max="1" desc="Disable/Enable the GOBI Radio. If set to 1, the GOBI radio will be turned on automatically.&#xA;0 = Off&#xA;1 = On" name="Enable">1</Key>
+      </Section>
+    </Section>
+    <Section flags="465" desc="ActiveSync settings" name="ActiveSync">
+      <Key list="Off=0,On=1" flags="17" min="0" max="1" desc="Disable/Enable automatic connection when docked. If set to 1, a connection will automatically be esablished:&#xA;0 = Off&#xA;1 = On" name="AutoConnect">1</Key>
+      <Key flags="1" desc="Specify connection to use when docked:&#xA;&#xA;`USB&#xA;`115200 Default&#xA;`19200 Default&#xA;`38400 Default&#xA;`57600 Default" name="Connection">`USB</Key>
+    </Section>
+  </Section>
+  <Section flags="464" desc="System Settings" name="System">
+    <Section flags="464" desc="About Settings" name="About">
+      <Key flags="16" desc="Specify the device name.&#xA;&#xA;[MODELNUMBER] means use the current Dolphin's model number&#xA;[SERIALNUMBER] means use the current Dolphin's serial number&#xA;&#xA;***IMPORTANT NOTICE (RESTRICTIONS)***&#xA;1 - The DeviceName must begin with a letter.&#xA;2 - The DeviceName cannot exceed 15 characters in length." name="DeviceName">ID[SERIALNUMBER]</Key>
+      <Key flags="16" desc="Specify the device description.&#xA;" name="DeviceDescription">Dolphin Device</Key>
+    </Section>
+    <Section flags="465" desc="Power Management Settings" name="Power Management">
+      <Section flags="465" desc="Backlight Settings" name="Backlight">
+        <Section flags="465" name="Battery">
+          <Key list="Disabled = 0,10 sec = 10,30 sec = 30,1 min = 60,2 min = 120,3 min = 180,4 min = 240,5 min = 300" min="0" flags="17" desc="Specifiy the Backlight timeout.  This setting is only used when the device is on battery power." name="Timeout (Off)"> 60</Key>
+          <Key list="Disabled=0,Enabled=1" flags="17" min="0" max="1" desc="Enable or disable Auto On: &#xA;0 = Disable&#xA;1 =  Enable&#xA;Turns the Backlight on when a key is pressed or the screen is touched.   This setting is only used when the device is on battery power:" name="Auto On">1</Key>
+        </Section>
+        <Section flags="465" name="External">
+          <Key list="Disabled = 0,1 min = 60,2 min = 120,3 min = 180,4 min = 240,5 min = 300,6 min = 360,7 min = 420,8 min = 480,9 min = 540,10 min = 600" min="0" flags="17" desc="Specifiy the Backlight timeout.  This setting is only used when the device is on external power" name="Timeout (Off)"> 60</Key>
+          <Key list="Disabled=0,Enabled=1" flags="17" min="0" max="1" desc="Enable or disable Auto On: &#xA;0 = Disable&#xA;1 =  Enable&#xA;Turns the Backlight on when a key is pressed or the screen is touched.   This setting is only used when the device is on external power." name="Auto On">1</Key>
+        </Section>
+        <Key max="252" min="0" flags="17" desc="Specifiy the Backlight intensity.  &#xA;For the 9900 &amp; 7600, range is 0 (off) to 8 (Full Power).&#xA;" name="Intensity">1</Key>
+      </Section>
+      <Section flags="465" desc="Power Button Settings" name="Power Button">
+        <Key list="Disabled=0,Enabled=1" flags="17" min="0" max="1" desc="Enables or disables the device power button:&#xA;0 = Disable&#xA;1 =  Enable" name="Enable">1</Key>
+      </Section>
+      <Section flags="465" desc="Power Settings" name="Power">
+        <Section flags="465" name="Battery">
+          <Key list="Never=0,1 minute=60,2 minutes=120,3 minutes=180,4 minutes=240,5 minutes=300" min="0" flags="17" desc="Specify the device suspend timeout in seconds.  Turns device off it is not used for the specified number of seconds.  This setting is only used when the device is on battery power.&#xA;&#xA;Valid settings:&#xA;&#xA;0 - Never go into suspend mode.  This is the default.&#xA;60 - 1 minute.&#xA;120 - 2 minutes.&#xA;180 - 3 minutes&#xA;240 - 4 minutes.&#xA;300 - 5 minutes.&#xA;" name="Timeout">300</Key>
+        </Section>
+        <Section flags="465" name="External">
+          <Key list="Never=0,1 minute=60,2 minutes=120,5 minutes=300,10 minutes=600,15 minutes=900,30 minutes=1800" min="0" flags="17" desc="Specify the device suspend timeout in seconds.  Turns device off it is not used for the specified number of seconds.  This setting is only used when the device is on external power.  &#xA;&#xA;Valid settings:&#xA;&#xA;0 - Never go into suspend mode.  This is the default.&#xA;60 - 1 minute.&#xA;120 - 2 minutes.&#xA;300 - 5 minutes.&#xA;600 - 10 minutes.&#xA;900 - 15 minutes.&#xA;1800 - 30 minutes." name="Timeout">0</Key>
+        </Section>
+      </Section>
+      <Section flags="465" desc="RS232 5V Power Out Settings" name="RS232 5V Power Out">
+        <Key list="Disabled=0,Enabled=1" flags="17" min="0" max="1" desc="Enable and disable 5V power to the RS232 port:&#xA;0 = Disable&#xA;1 =  Enable" name="Enable">0</Key>
+      </Section>
+    </Section>
+    <Section flags="465" desc="Screen Settings" name="Screen">
+      <Key list="Disabled=0,Enabled=1" flags="17" min="0" max="1" desc="Enables or disables ClearType support:&#xA;0 = Disable&#xA;1 =  Enable&#xA;Note: Requires device to be reset before setting takes effect." name="ClearType">0</Key>
+      <Key flags="17" min="600" max="1100" desc="Adjust the text size to see more content or increase the readability in some programs.&#xA;Smallest - 600&#xA;Largest - 1100" name="TextSize">1100</Key>
+    </Section>
+    <Section flags="465" desc="Shell Settings" name="Shell">
+      <Key list="Disable=0,Enable=6" flags="17" min="0" max="6" desc="Enable or disable the Start Menu animation:&#xA;0 = Disable&#xA;6 = Enable&#xA;&#xA;*Requires reset. Not Applied immediately after Tools--&gt;Launch Associated Application" name="StartMenuAnimation">6</Key>
+    </Section>
+    <Section flags="465" desc="Volume Settings" name="Volume">
+      <Key list="Disabled=0,Soft=1,Loud=2" flags="17" min="0" max="2" desc="Sets the key click volume&#xA;0 = Disable&#xA;1 =  Soft&#xA;2 = Loud" name="Keyboard">1</Key>
+      <Key list="Disabled=0,Soft=1,Loud=2" flags="17" min="0" max="2" desc="Sets the screen click volume&#xA;0 = Disable&#xA;1 =  Soft&#xA;2 = Loud" name="Screen">1</Key>
+      <Key list="0,1,2,3,4,5" flags="17" min="0" max="5" desc="Sets the volume level.   &#xA;Off = 0&#xA;Level 1&#xA;Level 2&#xA;Level 3&#xA;Level 4&#xA;Level 5" name="Volume">3</Key>
+    </Section>
+    <Section flags="257" name="Sensor">
+      <Key flags="1" max="6" min="0" desc="Registry key to determine the mode that the ISL integrated ambient and infrared light to digital converter is set to.&#xA;&#xA;0 = POWER_DOWN: Turn off and keep data in registers&#xA;1 = ALS_ONCE: Ambient Light Sense for one conversion then Power-Down&#xA;2 = IR_ONCE: Infrared Sense for one conversion then Power-Down.&#xA;3 = PROXIMITY_ONCE: Proximity Infrared Sense for one conversion then Power-Down.&#xA;4 = NONE: Reserved&#xA;5 = ALS_CONTINUOUS: Ambient Light Sense continuously and continue to refresh registers.&#xA;6 = IR_CONTINUOUS: Infrared Sense continuous and continues to refresh registers.&#xA;&#xA;*Requires reset. Not Applied immediately after Tools--&gt;Launch Associated Application&#xA;" name="ISLMode">0</Key>
+      <Key list="Disabled=0,Enabled=1" flags="17" min="0" max="1" desc="Registry key to determine if the Display Backlight should be adjusted by the light sensor.&#xA;&#xA;0 = Disabled&#xA;1 = Enabled&#xA;&#xA;*Requires reset. Not Applied immediately after Tools--&gt;Launch Associated Application&#xA;" name="Display Backlight">0</Key>
+      <Key list="Disabled=0,Enabled=1" flags="17" min="0" max="1" desc="Registry key to determine if the Display Backlight should be adjusted by the light sensor.  This setting uses the LightMiddleThreshold only and is off if it is above this value and on if it is below this value.&#xA;&#xA;0 = Disabled&#xA;1 = Enabled&#xA;&#xA;*Requires reset. Not Applied immediately after Tools--&gt;Launch Associated Application&#xA;" name="Keypad Backlight">0</Key>
+      <Key flags="1" max="65535" min="0" desc="Registry key to determine the low light threshold.&#xA;&#xA;0 - 65535 but it should be less than LightMiddleThreshold&#xA;&#xA;*Requires reset. Not Applied immediately after Tools--&gt;Launch Associated Application&#xA;" name="Light Low Threshold">500</Key>
+      <Key flags="1" max="65535" min="0" desc="Registry key to determine the middle light threshold.&#xA;&#xA;0 - 65535 but it should be less than LightHighThreshold&#xA;&#xA;*Requires reset. Not Applied immediately after Tools--&gt;Launch Associated Application&#xA;" name="Light Middle Threshold">1000</Key>
+      <Key flags="1" min="0" max="65535" desc="Registry key to determine the high light threshold.&#xA;&#xA;0 - 65535&#xA;&#xA;*Requires reset. Not Applied immediately after Tools--&gt;Launch Associated Application&#xA;" name="Light High Threshold">2500</Key>
+      <Key desc="&#xA;*Requires reset. Not Applied immediately after Tools--&gt;Launch Associated Application&#xA;" flags="1" name="Light UPS Threshold">50000</Key>
+      <Key desc="&#xA;*Requires reset. Not Applied immediately after Tools--&gt;Launch Associated Application&#xA;" flags="1" name="Proximity Threshold">65000</Key>
+      <Key desc="&#xA;*Requires reset. Not Applied immediately after Tools--&gt;Launch Associated Application&#xA;" flags="1" name="Proximity Sensitivity">64000</Key>
+      <Key desc="&#xA;*Requires reset. Not Applied immediately after Tools--&gt;Launch Associated Application&#xA;" flags="1" name="Proximity Slide Position">0</Key>
+      <Key flags="1" max="8" min="0" desc="Registry key to determine the display brightness when below the LightLowThreshold.&#xA;&#xA;0 - 8, but it should be less than BrightnessLevel2&#xA;&#xA;*Requires reset. Not Applied immediately after Tools--&gt;Launch Associated Application&#xA;" name="Brightness Level 1">2</Key>
+      <Key flags="1" max="8" min="0" desc="Registry key to determine the display brightness when between the LightLowThreshold and LightMiddleThreshold.&#xA;&#xA;0 - 8 but it should be less than BrightnessLevel3&#xA;&#xA;*Requires reset. Not Applied immediately after Tools--&gt;Launch Associated Application&#xA;" name="Brightness Level 2">4</Key>
+      <Key flags="1" max="8" min="0" desc="Registry key to determine the display brightness when between the LightMiddleThreshold and LightHighThreshold.&#xA;&#xA;0 - 8 but it should be less than BrightnessLevel4&#xA;&#xA;*Requires reset. Not Applied immediately after Tools--&gt;Launch Associated Application&#xA;" name="Brightness Level 3">6</Key>
+      <Key flags="1" desc="Registry key to determine the display brightness when above the LightHighThreshold.&#xA;&#xA;0 - 8&#xA;&#xA;*Requires reset. Not Applied immediately after Tools--&gt;Launch Associated Application&#xA;" max="8" min="0" name="Brightness Level 4">8</Key>
+      <Key desc="&#xA;*Requires reset. Not Applied immediately after Tools--&gt;Launch Associated Application&#xA;" flags="1" name="Brightness Change Speed">3</Key>
+    </Section>
+    <Section flags="465" name="Keyboard">
+      <Section flags="465" name="Caps Lock">
+        <Key flags="1" desc="Enables or disables Caps Lock&#xA;Set to On to enable.&#xA;" list="Off = 0,On = 1" name="Enable"> 0</Key>
+      </Section>
+      <Section flags="465" name="Num Lock">
+        <Key flags="1" desc="Enables or disables Num Lock&#xA;Set to On to enable.&#xA;" list="Off = 0,On = 1" name="Enable"> 0</Key>
+      </Section>
+      <Section flags="465" name="HotKeys">
+        <Key flags="1" desc="Sets the application to load when HotKey / App Key 1 is pressed.&#xA;On the 7600 this would be P1&#xA;On the 9900 this would be F1" name="Key 1">
+        </Key>
+        <Key flags="1" desc="Sets the application to load when HotKey / App Key 2 is pressed.&#xA;On the 7600 this would be P2&#xA;On the 9900 this would be F2" name="Key 2">
+        </Key>
+        <Key flags="1" desc="Sets the application to load when HotKey / App Key 3 is pressed.&#xA;On the 7600 this would be P3&#xA;On the 9900 this would be F3" name="Key 3">
+        </Key>
+        <Key flags="1" desc="Sets the application to load when HotKey / App Key 4 is pressed.&#xA;On the 7600 this would be P4&#xA;On the 9900 this would be F4" name="Key 4">
+        </Key>
+      </Section>
+    </Section>
+  </Section>
+  <Section flags="464" desc="Application Settings" name="Applications">
+    <Section flags="465" desc="Internet Explorer Settings" name="Internet Explorer">
+      <Key flags="17" desc="Specify the default home page for Pocket Internet Explorer.&#xA;&#xA;*Requires reset. Not Applied immediately after Tools--&gt;Launch Associated Application&#xA;" name="Home Page">http://www.handheld.com</Key>
+      <Key flags="17" min="0" max="1" desc="Enable or disable ClearType text in Internet Explorer.&#xA;0 = Disable&#xA;1 =  Enable&#xA;&#xA;*Requires reset. Not Applied immediately after Tools--&gt;Launch Associated Application&#xA;" name="ClearTypeText">0</Key>
+    </Section>
+    <Section desc="" flags="257" name="ReM">
+      <Section flags="257" name="Device">
+        <Key flags="1" max="2" min="1" desc="(Mandatory)&#xA; 1 - Use Device ID as the device name&#xA; 2 - Use Custom name" name="NameType">1</Key>
+        <Key flags="1" desc="(Mandatory when NameType is set to '2')&#xA;When NameType is '2', it is the device name which can contain customized macros, like '%AUTONUM%' etc." name="DeviceName">
+        </Key>
+        <Key flags="1" desc="(Optional)&#xA;The Rule Tag of the 'Add devices rule'. When it is  not specified, the device will use an 'Open' 'Add devices rule', Please refer to MobiControl help on how to create an open rule." name="DeviceClass">
+        </Key>
+        <Key flags="1" max="6" min="1" desc="(Optional)&#xA;default value is '3' : HAL UUID.&#xA;It can also be set to:&#xA;'1' - HAL Old Device ID&#xA;'2' - HAL New Device ID&#xA;'3' - HAL UUID&#xA;'4' - User Defined&#xA;'5' - Server specified&#xA;'6' - MAC" name="DeviceIDType">3</Key>
+      </Section>
+      <Section flags="257" name="Info">
+        <Key flags="1" desc="(Mandatory)&#xA;Site name of MobiControl Server" name="SiteName">
+        </Key>
+        <Key flags="1" max="" min="" desc="(Mandatory)&#xA;Method is used to define which part of the device is used as persistent memory.&#xA;1: PERSIST_HHP_AUTOINSTALL, \IPSM\AUTOINSTALL&#xA;70: PERSIST_HONEYWELL_NO_PERSISTENT, \HONEYWELL &#xA;71: PERSIST_HONEYWELL_STORAGE_CARD, \STORAGE CARD\HONEYWELL\AUTOINSTALL&#xA;87: PERSIST_HONEYWELL_IPSM, \IPSM\HONEYWELL\AUTOINSTALL" name="Method">87</Key>
+        <Key flags="1" desc="(Mandatory)&#xA;The AgentID is used for MobiControl Deployment Server to assign agents to devices.&#xA; -1 - Generic Agent&#xA;" name="AgentID">-1</Key>
+      </Section>
+      <Section flags="257" name="Comm">
+        <Key flags="1" max="1" min="0" desc="(Optional)&#xA; Enable broadcasting for discovering server addresses. Broadcasting can be enabled by setting this value to '1'. The default value is '0'" name="Broadcast">0</Key>
+        <Key flags="1" desc="(Optional)&#xA;Retry delay time when connection to server fails. Default value is '30000' (in ms)" name="RetryDelay">30000</Key>
+      </Section>
+      <Section flags="257" name="Connection">
+        <Key flags="1" desc="(Mandatory when Broadcast is not set to 1)&#xA;The server I.P. address and port, like '192.168.1.238:5494'" name="DeploySvr1">
+        </Key>
+      </Section>
+      <Key flags="1" desc="" name="ConfigPath">\Honeywell\MCBootstrap.ini</Key>
+    </Section>
+  </Section>
+  <Key flags="8" name="Version">6</Key>
+</ConfigDoc>

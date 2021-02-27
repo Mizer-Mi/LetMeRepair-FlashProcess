@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<ConfigDoc flags="16" desc="Manages the autoinstall process upon reboot" name="AutoInstall">
+  <Section flags="16" name="Settings" desc="General autoinstall settings">
+    <Key flags="8" desc="Current version of the configuration file. Do not edit." name="Version">3</Key>
+    <Key list="Disabled=0,Enabled=1" flags="16" name="Debug" desc="Enable and disables logging of debug information to a file. If debug is enabled, debug data will be logged to /IPSM/AUTOINSTALL.LOG. Set to 1 to enable and 0 to disable. Default=0 (disable).">0</Key>
+    <Key list="Disabled=0,Enabled=1" flags="16" name="Cancel" desc="Enable and disables the Cancel button. Set to 1 to enable and 0 to disable. Default=0 (disable)&#xA;&#xA;This key is only valid if FullScreen is enabled.">0</Key>
+    <Key list="Disabled=0,Enabled=1" flags="16" desc="Enable or disable the AutoInstall exit confirmation.&#xA;&#xA;This key is only valid if FullScreen is enabled." name="ExitPrompt">1</Key>
+    <Key list="Disabled=0,Enabled=1,Auto=2" flags="16" name="FullScreen" desc="Enable or disable the fullscreen AutoInstall process.&#xA;&#xA;0 - Disable AutoInstall fullscreen support&#xA;1 - Enable AutoInstall fullscreen support&#xA;2 - Enable AutoInstall  fullscreen  auto selection, Disabled for Pocket PC 2003 devices and enabled for Windows Mobile 5.0 device. ">2</Key>
+    <Key list="Disabled=0,Enabled=1" flags="16" name="HaltOnError" desc="Sets the behavior of autoinstall when an error is encountered. Set to 1 to stop the installation process and prompt via messagebox. Set to 0 to log the error and continue the installation process. Default=1 (enable)&#xA;&#xA;This key is only valid if FullScreen is enabled.">0</Key>
+    <Key list="Disabled=0,Enabled=1" flags="16" desc="Defines if characters input into password dialogs should be masked (Default=1):&#xA;0=Disable&#xA;1=Enable&#xA;&#xA;This key is only valid if FullScreen is enabled." name="MaskPassword">1</Key>
+    <Key flags="16" name="Password" desc="Sets the password needed to abort the autoinstall process. If this field is blank the user will not be prompted to enter a password upon exit. Default is blank.&#xA;&#xA;This key is only valid if FullScreen is enabled.">
+    </Key>
+  </Section>
+  <HHPReserved>
+    <Section name="EZConfigBC">
+      <Key name="RemotePath">\honeywell\AutoInstall.exm</Key>
+      <Key name="Simplify">0</Key>
+      <Key name="MaxBarcodeSize">1500</Key>
+      <Key name="ForcedNumBC">0</Key>
+      <Key name="WebHeader">EZConfig Bar Code Sheet</Key>
+      <Key name="WebFooter">Hand Held Products</Key>
+      <Key name="Scaling">2</Key>
+      <Key name="Flags">0</Key>
+      <Key name="DataFlags">0</Key>
+    </Section>
+    <Key name="EXMVersion">1.0.1</Key>
+	<Key name="ContentVersion">1.0.0</Key>
+  </HHPReserved>
+</ConfigDoc>

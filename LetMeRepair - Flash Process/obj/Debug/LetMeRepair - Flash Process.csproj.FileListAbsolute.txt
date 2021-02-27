@@ -1,0 +1,39 @@
+C:\Users\Mizer\source\repos\LetMeRepair - Flash Process\LetMeRepair - Flash Process\obj\Debug\LetMeRepair___Flash_Process.Form1.resources
+C:\Users\Mizer\source\repos\LetMeRepair - Flash Process\LetMeRepair - Flash Process\obj\Debug\LetMeRepair___Flash_Process.Properties.Resources.resources
+C:\Users\Mizer\source\repos\LetMeRepair - Flash Process\LetMeRepair - Flash Process\obj\Debug\LetMeRepair - Flash Process.csproj.GenerateResource.cache
+C:\Users\Mizer\source\repos\LetMeRepair - Flash Process\LetMeRepair - Flash Process\obj\Debug\LetMeRepair - Flash Process.csproj.CoreCompileInputs.cache
+C:\Users\Mizer\source\repos\LetMeRepair - Flash Process\LetMeRepair - Flash Process\bin\Debug\LetMeRepair - Flash Process.exe.config
+C:\Users\Mizer\source\repos\LetMeRepair - Flash Process\LetMeRepair - Flash Process\bin\Debug\LetMeRepair - Flash Process.exe
+C:\Users\Mizer\source\repos\LetMeRepair - Flash Process\LetMeRepair - Flash Process\bin\Debug\LetMeRepair - Flash Process.pdb
+C:\Users\Mizer\source\repos\LetMeRepair - Flash Process\LetMeRepair - Flash Process\bin\Debug\OpenNETCF.Extensions.dll
+C:\Users\Mizer\source\repos\LetMeRepair - Flash Process\LetMeRepair - Flash Process\bin\Debug\OpenNETCF.Extensions.FFx.dll
+C:\Users\Mizer\source\repos\LetMeRepair - Flash Process\LetMeRepair - Flash Process\bin\Debug\OpenNETCF.MQTT.dll
+C:\Users\Mizer\source\repos\LetMeRepair - Flash Process\LetMeRepair - Flash Process\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+C:\Users\Mizer\source\repos\LetMeRepair - Flash Process\LetMeRepair - Flash Process\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+C:\Users\Mizer\source\repos\LetMeRepair - Flash Process\LetMeRepair - Flash Process\obj\Debug\LetMeRepair - Flash Process.csproj.CopyComplete
+C:\Users\Mizer\source\repos\LetMeRepair - Flash Process\LetMeRepair - Flash Process\obj\Debug\LetMeRepair - Flash Process.exe
+C:\Users\Mizer\source\repos\LetMeRepair - Flash Process\LetMeRepair - Flash Process\obj\Debug\LetMeRepair - Flash Process.pdb
+C:\Users\Mizer\source\repos\LetMeRepair - Flash Process\LetMeRepair - Flash Process\obj\Debug\LetMeRepair___Flash_Process.Ayarlar.resources
+C:\Users\Mizer\source\repos\LetMeRepair - Flash Process\LetMeRepair - Flash Process\obj\Debug\LetMeRepair___Flash_Process.mizer_acilir_Combo.resources
+C:\Users\Mizer\source\repos\LetMeRepair - Flash Process\LetMeRepair - Flash Process\obj\Debug\LetMeRepair___Flash_Process.imeidenhexe_mizer.resources
+K:\Eski PC Yedekleri\Yedek X PC Is Yeri\Yedek X PC Is Yeri\Yazılım\LetMeRepair - Flash Process\LetMeRepair - Flash Process\bin\Debug\LetMeRepair - Flash Process.exe.config
+K:\Eski PC Yedekleri\Yedek X PC Is Yeri\Yedek X PC Is Yeri\Yazılım\LetMeRepair - Flash Process\LetMeRepair - Flash Process\bin\Debug\LetMeRepair - Flash Process.exe
+K:\Eski PC Yedekleri\Yedek X PC Is Yeri\Yedek X PC Is Yeri\Yazılım\LetMeRepair - Flash Process\LetMeRepair - Flash Process\bin\Debug\LetMeRepair - Flash Process.pdb
+K:\Eski PC Yedekleri\Yedek X PC Is Yeri\Yedek X PC Is Yeri\Yazılım\LetMeRepair - Flash Process\LetMeRepair - Flash Process\bin\Debug\OpenNETCF.Extensions.dll
+K:\Eski PC Yedekleri\Yedek X PC Is Yeri\Yedek X PC Is Yeri\Yazılım\LetMeRepair - Flash Process\LetMeRepair - Flash Process\bin\Debug\OpenNETCF.Extensions.FFx.dll
+K:\Eski PC Yedekleri\Yedek X PC Is Yeri\Yedek X PC Is Yeri\Yazılım\LetMeRepair - Flash Process\LetMeRepair - Flash Process\bin\Debug\OpenNETCF.MQTT.dll
+K:\Eski PC Yedekleri\Yedek X PC Is Yeri\Yedek X PC Is Yeri\Yazılım\LetMeRepair - Flash Process\LetMeRepair - Flash Process\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+K:\Eski PC Yedekleri\Yedek X PC Is Yeri\Yedek X PC Is Yeri\Yazılım\LetMeRepair - Flash Process\LetMeRepair - Flash Process\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+K:\Eski PC Yedekleri\Yedek X PC Is Yeri\Yedek X PC Is Yeri\Yazılım\LetMeRepair - Flash Process\LetMeRepair - Flash Process\obj\Debug\LetMeRepair - Flash Process.csprojAssemblyReference.cache
+K:\Eski PC Yedekleri\Yedek X PC Is Yeri\Yedek X PC Is Yeri\Yazılım\LetMeRepair - Flash Process\LetMeRepair - Flash Process\obj\Debug\LetMeRepair___Flash_Process.Ayarlar.resources
+K:\Eski PC Yedekleri\Yedek X PC Is Yeri\Yedek X PC Is Yeri\Yazılım\LetMeRepair - Flash Process\LetMeRepair - Flash Process\obj\Debug\LetMeRepair___Flash_Process.ct60_40_80.resources
+K:\Eski PC Yedekleri\Yedek X PC Is Yeri\Yedek X PC Is Yeri\Yazılım\LetMeRepair - Flash Process\LetMeRepair - Flash Process\obj\Debug\LetMeRepair___Flash_Process.Form1.resources
+K:\Eski PC Yedekleri\Yedek X PC Is Yeri\Yedek X PC Is Yeri\Yazılım\LetMeRepair - Flash Process\LetMeRepair - Flash Process\obj\Debug\LetMeRepair___Flash_Process.FrmMFGEditorRlt.resources
+K:\Eski PC Yedekleri\Yedek X PC Is Yeri\Yedek X PC Is Yeri\Yazılım\LetMeRepair - Flash Process\LetMeRepair - Flash Process\obj\Debug\LetMeRepair___Flash_Process.imeidenhexe_mizer.resources
+K:\Eski PC Yedekleri\Yedek X PC Is Yeri\Yedek X PC Is Yeri\Yazılım\LetMeRepair - Flash Process\LetMeRepair - Flash Process\obj\Debug\LetMeRepair___Flash_Process.mizer_acilir_Combo.resources
+K:\Eski PC Yedekleri\Yedek X PC Is Yeri\Yedek X PC Is Yeri\Yazılım\LetMeRepair - Flash Process\LetMeRepair - Flash Process\obj\Debug\LetMeRepair___Flash_Process.Properties.Resources.resources
+K:\Eski PC Yedekleri\Yedek X PC Is Yeri\Yedek X PC Is Yeri\Yazılım\LetMeRepair - Flash Process\LetMeRepair - Flash Process\obj\Debug\LetMeRepair - Flash Process.csproj.GenerateResource.cache
+K:\Eski PC Yedekleri\Yedek X PC Is Yeri\Yedek X PC Is Yeri\Yazılım\LetMeRepair - Flash Process\LetMeRepair - Flash Process\obj\Debug\LetMeRepair - Flash Process.csproj.CoreCompileInputs.cache
+K:\Eski PC Yedekleri\Yedek X PC Is Yeri\Yedek X PC Is Yeri\Yazılım\LetMeRepair - Flash Process\LetMeRepair - Flash Process\obj\Debug\LetMeRepair - Flash Process.csproj.CopyComplete
+K:\Eski PC Yedekleri\Yedek X PC Is Yeri\Yedek X PC Is Yeri\Yazılım\LetMeRepair - Flash Process\LetMeRepair - Flash Process\obj\Debug\LetMeRepair - Flash Process.exe
+K:\Eski PC Yedekleri\Yedek X PC Is Yeri\Yedek X PC Is Yeri\Yazılım\LetMeRepair - Flash Process\LetMeRepair - Flash Process\obj\Debug\LetMeRepair - Flash Process.pdb
